@@ -25,6 +25,8 @@ public final class NIOReactor {
 	public NIOReactor(String name, SharedBufferPool shearedBufferPool) throws IOException {
 		this.name = name;
 		this.shearedBufferPool = shearedBufferPool;
+
+
 		this.reactorR = new RWThread();
 	}
 
